@@ -1,5 +1,0 @@
-a = int(input('Digite a nota 1:'))
-b = int(input('Digite a nota 2:'))
-c = int(input('Digite a nota 3:'))
-d = int(input('Digite a nota 4:'))
-print('A média das notas é:', (a+b+c+d)/4)
