@@ -15,7 +15,7 @@ if (quantLata != int(quantLata)):
 else:
     valorLata = quantLata *80
 
-if area < 108:
+if area <= 108:
     print("Comprando galoes ira precisar de {}, custando R$ {}".format(quantGalao, float(valorGalao)))
     print("Comprando latas ira precisar de {}, custando R$ {}".format(quantLata, float(valorLata)))
     print('Não a necessidade de comprar galoes e latas juntos!')
