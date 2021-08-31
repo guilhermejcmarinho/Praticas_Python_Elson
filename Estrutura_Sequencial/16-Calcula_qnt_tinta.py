@@ -1,7 +1,11 @@
+import math
+
 qntMetros = float(input('Informe a quantidade de m² a serem pintados:'))
 
-tintaTotal = qntMetros * 18 / 54
-#qntLatas = tintaTotal/18
+tintaTotal = math.ceil(qntMetros/3)
+qntLatas = math.ceil(tintaTotal/18)
+precoTotal = qntLatas*80
 
-print('Quantidade de tinta:', round(tintaTotal), 'Litro(s).')
-#print('Quantidade de Latas:', round(qntLatas), 'Lata(s).')
+print('Quantidade de tinta: {} Litro(s).'.format(tintaTotal))
+print('Quantidade de Latas: {} Lata(s).'.format(qntLatas))
+print('Custo pela(s) {} lata(s) é de R$ {},00'.format(qntLatas, precoTotal))
