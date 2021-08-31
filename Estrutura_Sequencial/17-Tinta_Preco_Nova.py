@@ -15,7 +15,11 @@ if (quantLata != int(quantLata)):
 else:
     valorLata = quantLata *80
 
-if area > 107:
+if area < 108:
+    print("Comprando galoes ira precisar de {}, custando R$ {}".format(quantGalao, float(valorGalao)))
+    print("Comprando latas ira precisar de {}, custando R$ {}".format(quantLata, float(valorLata)))
+    print('Não a necessidade de comprar galoes e latas juntos!')
+else:
     litrosFolga = litros * 1.1
     diferLitros = litrosFolga % 18
     quantDiferGalao = diferLitros / 3.6
@@ -35,7 +39,3 @@ if area > 107:
     print("Comprando galoes ira precisar de {}, custando R$ {}".format(quantGalao, float(valorGalao)))
     print("Comprando latas ira precisar de {}, custando R$ {}".format(quantLata, float(valorLata)))
     print("Comprando latas e galoes ira precisar de {} lata(s) e {} galao(oes) custando R$ {}".format(int(quantDiferLata), quantDiferGalao, valorTotal))
-else:
-    print("Comprando galoes ira precisar de {}, custando R$ {}".format(quantGalao, float(valorGalao)))
-    print("Comprando latas ira precisar de {}, custando R$ {}".format(quantLata, float(valorLata)))
-    print('Não a necessidade de comprar galoes e latas juntos!')
